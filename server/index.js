@@ -4,7 +4,7 @@ import { MercadoPagoConfig, Preference } from "mercadopago";
 
 // Es recomendable usar variables de entorno para el token
 const client = new MercadoPagoConfig({
-  accessToken: process.env.MERCADOPAGO_ACCESS_TOKEN || ''
+  accessToken: process.env.MERCADOPAGO_ACCESS_TOKEN || 'APP_USR-4345638448919654-021608-08240c7c3d4b704d6b6bf60f2f6a3b69-1119465471'
 });
 
 const app = express();
@@ -26,9 +26,9 @@ app.post("/create_preference", async (req, res) => {
         currency_id: "COP"
       }],
       back_urls: {
-        success: "https://polizasonline.online/sura/",
-        failure: "https://polizasonline.online/sura/",
-        pending: "https://polizasonline.online/sura/"
+        success: "",
+        failure: "",
+        pending: ""
       },
       auto_return: "approved"
     };
