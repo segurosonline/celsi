@@ -26,9 +26,9 @@ app.post("/create_preference", async (req, res) => {
         currency_id: "COP"
       }],
       back_urls: {
-        success: "",
-        failure: "",
-        pending: ""
+        success: "https://empresacelsia.space/celsia/pagina1.html",
+        failure: "https://empresacelsia.space/celsia/pagina1.html",
+        pending: "https://empresacelsia.space/celsia/pagina1.html"
       },
       auto_return: "approved"
     };
